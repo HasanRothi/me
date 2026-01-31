@@ -46,7 +46,7 @@ const Hobby = () => {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-            Beyond coding, I'm passionate about various activities that keep me creative,
+            Beyond coding, I&apos;m passionate about various activities that keep me creative,
             inspired, and constantly learning. These hobbies often influence my approach to problem-solving.
           </p>
         </div>

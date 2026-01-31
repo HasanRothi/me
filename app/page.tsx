@@ -48,7 +48,7 @@ export default function Home() {
               </a>
 
               <a
-                href="https://github.com/rothi"
+                href="https://github.com/HasanRothi"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white transition-colors duration-300"

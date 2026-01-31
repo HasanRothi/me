@@ -47,8 +47,8 @@ const Contact = () => {
     {
       icon: '🐙',
       title: 'GitHub',
-      value: 'github.com/rothi',
-      link: 'https://github.com/rothi'
+      value: 'github.com/HasanRothi',
+      link: 'https://github.com/HasanRothi'
     },
     {
       icon: '🌍',
@@ -65,7 +65,7 @@ const Contact = () => {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
-            I'm always interested in discussing new opportunities, exciting projects,
+            I&apos;m always interested in discussing new opportunities, exciting projects,
             or just having a conversation about technology. Feel free to reach out!
           </p>
         </div>

@@ -1,18 +1,18 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useMemo } from 'react'
 
 const Hero = () => {
   const [text, setText] = useState('')
   const [currentIndex, setCurrentIndex] = useState(0)
   const [isTyping, setIsTyping] = useState(true)
 
-  const titles = [
+  const titles = useMemo(() => [
     'Backend Engineer',
     'GenAI Expert',
     'Software Engineer @ 10MS',
     'Go | Node | Python Developer'
-  ]
+  ], [])
 
   useEffect(() => {
     const currentTitle = titles[currentIndex]
