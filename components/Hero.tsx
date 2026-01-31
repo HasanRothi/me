@@ -47,14 +47,15 @@ const Hero = () => {
 
       <div className="relative z-10 text-center max-w-4xl mx-auto px-6">
         <div className="animate-fade-in">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 text-black">
-            Md Riad Hasan Sarker
+          <h1 className="font-bold mb-6 text-black">
+            <span className="block sm:hidden text-2xl leading-tight">Md Riad Hasan Sarker</span>
+            <span className="hidden sm:block text-4xl md:text-7xl">Md Riad Hasan Sarker</span>
           </h1>
 
-          <div className="text-2xl md:text-3xl mb-8 h-12 flex items-center justify-center">
+          <div className="text-xl sm:text-2xl md:text-3xl mb-8 h-12 flex items-center justify-center">
             <span className="text-black">
               {text}
-              <span className="animate-pulse text-black">|</span>
+              <span className="animate-pulse text-black hidden md:inline">|</span>
             </span>
           </div>
 

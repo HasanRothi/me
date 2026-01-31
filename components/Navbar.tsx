@@ -23,6 +23,7 @@ const Navbar = () => {
     { id: 'skills', label: 'Skills' },
     { id: 'projects', label: 'Projects' },
     { id: 'certificates', label: 'Certificates' },
+    { id: 'programming-context', label: 'Competitive Programming' },
     { id: 'volunteering', label: 'Volunteering' },
     { id: 'hobby', label: 'Hobby' },
     { id: 'contact', label: 'Contact' },

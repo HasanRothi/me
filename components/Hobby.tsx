@@ -52,11 +52,11 @@ const Hobby = () => {
         </div>
 
         {/* Hobbies Grid */}
-        <div className="flex flex-wrap justify-center gap-6 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 mb-12">
           {hobbies.map((hobby, index) => (
             <div
               key={index}
-              className="card p-6 text-center transition-all duration-300 w-48"
+              className="card p-6 text-center transition-all duration-300"
             >
               <div className="text-4xl mb-3">{hobby.icon}</div>
               <h3 className="font-semibold text-black text-sm mb-2">{hobby.title}</h3>

@@ -5,6 +5,7 @@ import Education from '@/components/Education'
 import Skills from '@/components/Skills'
 import Projects from '@/components/Projects'
 import Certificates from '@/components/Certificates'
+import ProgrammingContext from '@/components/ProgrammingContext'
 import Volunteering from '@/components/Volunteering'
 import Hobby from '@/components/Hobby'
 import Contact from '@/components/Contact'
@@ -19,6 +20,7 @@ export default function Home() {
       <Skills />
       <Projects />
       <Certificates />
+      <ProgrammingContext />
       <Volunteering />
       <Hobby />
       <Contact />
@@ -60,7 +62,7 @@ export default function Home() {
               </a>
 
               <a
-                href="mailto:rothi.dev@gmail.com"
+                href="mailto:hasantechnologist@gmail.com"
                 className="text-gray-400 hover:text-white transition-colors duration-300"
               >
                 <span className="sr-only">Email</span>

@@ -3,11 +3,11 @@
 const Education = () => {
   const education = [
     {
-      degree: 'Master of Engineering - Computer Science',
+      degree: 'Master of Engineering - Computer Science (Major in Data Science)',
       school: 'United International University',
       year: 'Jan 2024 - Jul 2025',
       grade: 'CGPA: 3.14/4.0',
-      description: 'Major in Data Science. Focused on GenAI & Deep Learning projects.',
+      description: 'Focused on GenAI & Deep Learning projects.',
       achievements: [
         'Specialized in Big Data and Machine Learning',
         'Deep Learning and AI research projects',
@@ -75,7 +75,7 @@ const Education = () => {
                     <ul className="space-y-2">
                       {edu.achievements.map((achievement, idx) => (
                         <li key={idx} className="flex items-start">
-                          <span className="text-black mr-2 mt-1">
+                          <span className="text-black mr-2 mt-1 hidden md:inline">
                             •
                           </span>
                           <span className="text-gray-700 text-sm">

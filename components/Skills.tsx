@@ -7,44 +7,43 @@ const Skills = () => {
 
   const skillCategories = {
     'Backend': [
-      { name: 'Go', level: 95, icon: '🔵' },
-      { name: 'Node.js', level: 92, icon: '🟢' },
-      { name: 'Python', level: 90, icon: '🐍' },
-      { name: 'NestJS', level: 88, icon: '🏰' },
-      { name: 'Express.js', level: 90, icon: '🚀' },
-      { name: 'GraphQL', level: 85, icon: '📊' }
-    ],
-    'AI/ML': [
-      { name: 'LangGraph', level: 92, icon: '🕸️' },
-      { name: 'PGVector', level: 90, icon: '🔍' },
-      { name: 'OpenAI APIs', level: 88, icon: '🤖' },
-      { name: 'RAG Systems', level: 90, icon: '📚' },
-      { name: 'Vector Search', level: 88, icon: '🎯' },
-      { name: 'LLM Orchestration', level: 85, icon: '🎼' }
+      { name: 'Go', level: 95, icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg' },
+      { name: 'Node.js', level: 92, icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg' },
+      { name: 'Python', level: 90, icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' },
+      { name: 'FastAPI', level: 88, icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg' },
+      { name: 'NestJS', level: 88, icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-plain.svg' },
+      { name: 'Express.js', level: 90, icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg' },
+      { name: 'GraphQL', level: 85, icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg' },
+      { name: 'RabbitMQ', level: 85, icon: 'https://img.icons8.com/color/48/rabbitmq.png' },
+      { name: 'Microservices', level: 92, icon: 'https://img.icons8.com/fluency/48/web-services.png' }
     ],
     'Database': [
-      { name: 'PostgreSQL', level: 95, icon: '🐘' },
-      { name: 'MongoDB', level: 92, icon: '🍃' },
-      { name: 'Redis', level: 90, icon: '💎' },
-      { name: 'Typesense', level: 85, icon: '🔍' },
-      { name: 'PGVector', level: 88, icon: '📊' },
-      { name: 'Apache Airflow', level: 82, icon: '🌪️' }
+      { name: 'PostgreSQL', level: 95, icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg' },
+      { name: 'MongoDB', level: 92, icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg' },
+      { name: 'Redis', level: 90, icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg' },
+      { name: 'Typesense', level: 85, icon: 'https://img.icons8.com/fluency/48/search.png' }
     ],
     'Cloud/DevOps': [
-      { name: 'AWS', level: 90, icon: '☁️' },
-      { name: 'Docker', level: 95, icon: '🐳' },
-      { name: 'Kubernetes', level: 88, icon: '⚓' },
-      { name: 'RabbitMQ', level: 85, icon: '🐰' },
-      { name: 'OpenTelemetry', level: 82, icon: '📡' },
-      { name: 'Microservices', level: 92, icon: '🔧' }
+      { name: 'AWS', level: 90, icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg' },
+      { name: 'Docker', level: 95, icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg' },
+      { name: 'Kubernetes', level: 88, icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg' },
+      { name: 'OpenTelemetry', level: 82, icon: 'https://img.icons8.com/fluency/48/api.png' }
+    ],
+    'AI/ML': [
+      { name: 'LangGraph', level: 92, icon: 'https://img.icons8.com/fluency/48/artificial-intelligence.png' },
+      { name: 'OpenAI APIs', level: 88, icon: 'https://img.icons8.com/fluency/48/chatgpt.png' },
+      { name: 'RAG Systems', level: 90, icon: 'https://img.icons8.com/fluency/48/artificial-intelligence.png' },
+      { name: 'Vector Search', level: 88, icon: 'https://img.icons8.com/fluency/48/search.png' },
+      { name: 'LLM Orchestration', level: 85, icon: 'https://img.icons8.com/fluency/48/workflow.png' },
+      { name: 'Opik', level: 80, icon: 'https://img.icons8.com/fluency/48/monitoring.png' }
     ],
     'Tools': [
-      { name: 'Git', level: 95, icon: '📚' },
-      { name: 'Firebase', level: 88, icon: '🔥' },
-      { name: 'Kafka', level: 82, icon: '📡' },
-      { name: 'Socket.IO', level: 85, icon: '🔌' },
-      { name: 'Opik', level: 80, icon: '👁️' },
-      { name: 'ETL Pipelines', level: 88, icon: '⚙️' }
+      { name: 'Git', level: 95, icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg' },
+      { name: 'Firebase', level: 88, icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg' },
+      { name: 'Kafka', level: 82, icon: 'https://img.icons8.com/color/48/apache-kafka.png' },
+      { name: 'Socket.IO', level: 85, icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg' },
+      { name: 'Apache Airflow', level: 82, icon: 'https://img.icons8.com/fluency/48/workflow.png' },
+      { name: 'ETL Pipelines', level: 88, icon: 'https://img.icons8.com/fluency/48/workflow.png' }
     ]
   }
 
@@ -74,8 +73,15 @@ const Skills = () => {
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-12">
           {skillCategories[activeCategory as keyof typeof skillCategories].map((skill, index) => (
             <div key={skill.name} className="card p-4 text-center animate-slide-up" style={{ animationDelay: `${index * 100}ms` }}>
-              <div className="mb-3">
-                <span className="text-3xl">{skill.icon}</span>
+              <div className="mb-3 flex justify-center">
+                <img
+                  src={skill.icon}
+                  alt={skill.name}
+                  className="w-12 h-12 object-contain"
+                  onError={(e) => {
+                    e.currentTarget.style.display = 'none'
+                  }}
+                />
               </div>
               <h3 className="text-sm font-semibold text-black">
                 {skill.name}
