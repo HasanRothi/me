@@ -51,14 +51,14 @@ const Skills = () => {
     <section id="skills" className="section-container bg-gray-50">
       <h2 className="section-title">Skills & Technologies</h2>
 
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-6xl mx-auto overflow-x-hidden">
         {/* Category Tabs */}
-        <div className="flex flex-wrap justify-center gap-4 mb-12">
+        <div className="flex flex-wrap justify-center gap-2 sm:gap-4 mb-12 -mx-4 px-4 sm:mx-0 sm:px-0">
           {Object.keys(skillCategories).map((category) => (
             <button
               key={category}
               onClick={() => setActiveCategory(category)}
-              className={`px-6 py-3 rounded-xl font-semibold transition-all duration-300 ${
+              className={`px-3 sm:px-6 py-2 sm:py-3 rounded-xl font-semibold transition-all duration-300 text-xs sm:text-sm flex-shrink-0 ${
                 activeCategory === category
                   ? 'bg-black text-white shadow-lg'
                   : 'bg-white text-black hover:bg-gray-100'
@@ -70,9 +70,9 @@ const Skills = () => {
         </div>
 
         {/* Skills Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-12">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 sm:gap-4 mb-12">
           {skillCategories[activeCategory as keyof typeof skillCategories].map((skill, index) => (
-            <div key={skill.name} className="card p-4 text-center animate-slide-up" style={{ animationDelay: `${index * 100}ms` }}>
+            <div key={skill.name} className="card p-3 sm:p-4 text-center animate-slide-up w-full overflow-hidden" style={{ animationDelay: `${index * 100}ms` }}>
               <div className="mb-3 flex justify-center">
                 <img
                   src={skill.icon}

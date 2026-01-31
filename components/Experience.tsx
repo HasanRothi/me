@@ -76,16 +76,16 @@ const Experience = () => {
     <section id="experience" className="section-container bg-gray-50">
       <h2 className="section-title">Experience</h2>
 
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-4xl mx-auto overflow-x-hidden">
         <div className="flex flex-col md:flex-row">
           {/* Company Tabs */}
           <div className="md:w-1/3 mb-6 md:mb-0">
-            <div className="flex flex-row md:flex-col overflow-x-auto md:overflow-visible">
+            <div className="flex flex-row md:flex-col overflow-x-auto md:overflow-visible pb-2 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0">
               {experiences.map((exp, index) => (
                 <button
                   key={index}
                   onClick={() => setActiveTab(index)}
-                  className={`flex-shrink-0 text-left p-4 border-l-2 md:border-l-4 transition-all duration-300 ${
+                  className={`flex-shrink-0 text-left p-3 md:p-4 border-l-2 md:border-l-4 transition-all duration-300 min-w-[200px] md:min-w-0 ${
                     activeTab === index
                       ? 'border-black bg-gray-100 text-black'
                       : 'border-gray-200 text-gray-600 hover:border-black hover:text-black'

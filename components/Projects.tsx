@@ -139,14 +139,14 @@ const Projects = () => {
     <section id="projects" className="section-container bg-gray-50">
       <h2 className="section-title">Featured Projects</h2>
 
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-6xl mx-auto overflow-x-hidden">
         {/* Filter Categories */}
-        <div className="flex flex-wrap justify-center gap-3 mb-12">
+        <div className="flex flex-wrap justify-center gap-2 sm:gap-3 mb-12 -mx-4 px-4 sm:mx-0 sm:px-0">
           {categories.map((category) => (
             <button
               key={category}
               onClick={() => setActiveFilter(category)}
-              className={`px-4 py-2 rounded-lg font-medium transition-all duration-300 text-sm ${
+              className={`px-3 sm:px-4 py-2 rounded-lg font-medium transition-all duration-300 text-xs sm:text-sm flex-shrink-0 ${
                 activeFilter === category
                   ? 'bg-black text-white shadow-md'
                   : 'bg-white text-black hover:bg-gray-100'
@@ -158,11 +158,11 @@ const Projects = () => {
         </div>
 
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
           {filteredProjects.map((project, index) => (
             <div
               key={project.id}
-              className="card p-6 cursor-pointer transform transition-all duration-300 hover:scale-105 animate-slide-up"
+              className="card p-4 sm:p-6 cursor-pointer transform transition-all duration-300 hover:scale-105 animate-slide-up w-full overflow-hidden"
               style={{ animationDelay: `${index * 150}ms` }}
               onClick={() => setSelectedProject(selectedProject === project.id ? 0 : project.id)}
             >

@@ -362,15 +362,15 @@ const Certificates = () => {
     <section id="certificates" className="section-container">
       <h2 className="section-title">Certificates</h2>
 
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto overflow-x-hidden">
 
         {/* Filter Tabs */}
-        <div className="flex flex-wrap justify-center gap-2 mb-8">
+        <div className="flex flex-wrap justify-center gap-1 sm:gap-2 mb-8 -mx-4 px-4 sm:mx-0 sm:px-0">
           {certTypes.map((type) => (
             <button
               key={type}
               onClick={() => handleFilterChange(type)}
-              className={`px-3 py-1 rounded-lg text-sm font-medium transition-all duration-300 ${
+              className={`px-2 sm:px-3 py-1 rounded-lg text-xs sm:text-sm font-medium transition-all duration-300 flex-shrink-0 ${
                 activeFilter === type
                   ? 'bg-black text-white shadow-md'
                   : 'bg-white text-black hover:bg-gray-100'
@@ -506,21 +506,21 @@ const Certificates = () => {
 
         {/* Pagination */}
         {totalPages > 1 && (
-          <div className="flex justify-center items-center space-x-4">
+          <div className="flex justify-center items-center space-x-2 overflow-x-auto px-4">
             <button
               onClick={() => setCurrentPage(prev => Math.max(prev - 1, 1))}
               disabled={currentPage === 1}
-              className="px-3 py-1 rounded bg-white border border-gray-300 text-sm disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-50"
+              className="flex-shrink-0 px-2 sm:px-3 py-1 rounded bg-white border border-gray-300 text-xs sm:text-sm disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-50"
             >
-              Previous
+              Prev
             </button>
 
-            <div className="flex space-x-1">
+            <div className="flex space-x-1 overflow-x-auto scrollbar-hide">
               {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
                 <button
                   key={page}
                   onClick={() => setCurrentPage(page)}
-                  className={`px-3 py-1 rounded text-sm transition-all duration-300 ${
+                  className={`flex-shrink-0 px-2 sm:px-3 py-1 rounded text-xs sm:text-sm transition-all duration-300 ${
                     currentPage === page
                       ? 'bg-black text-white'
                       : 'bg-white text-black hover:bg-gray-100 border border-gray-300'
@@ -534,7 +534,7 @@ const Certificates = () => {
             <button
               onClick={() => setCurrentPage(prev => Math.min(prev + 1, totalPages))}
               disabled={currentPage === totalPages}
-              className="px-3 py-1 rounded bg-white border border-gray-300 text-sm disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-50"
+              className="flex-shrink-0 px-2 sm:px-3 py-1 rounded bg-white border border-gray-300 text-xs sm:text-sm disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-50"
             >
               Next
             </button>
