@@ -3,7 +3,7 @@
 import { useState } from 'react'
 
 const Certificates = () => {
-  const [selectedCert, setSelectedCert] = useState(null)
+  const [selectedCert, setSelectedCert] = useState<number | null>(null)
 
   const certificates = [
     {
