@@ -176,25 +176,6 @@ const Volunteering = () => {
           ))}
         </div>
 
-        {/* Community Impact Stats */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-          <div className="card p-6 text-center">
-            <div className="text-3xl font-bold text-black mb-2">80+</div>
-            <div className="text-gray-700 text-sm">Students Mentored</div>
-          </div>
-          <div className="card p-6 text-center">
-            <div className="text-3xl font-bold text-black mb-2">5+</div>
-            <div className="text-gray-700 text-sm">Events Organized</div>
-          </div>
-          <div className="card p-6 text-center">
-            <div className="text-3xl font-bold text-black mb-2">2+</div>
-            <div className="text-gray-700 text-sm">Years of Service</div>
-          </div>
-          <div className="card p-6 text-center">
-            <div className="text-3xl font-bold text-black mb-2">40%</div>
-            <div className="text-gray-700 text-sm">Club Growth</div>
-          </div>
-        </div>
       </div>
     </section>
   )

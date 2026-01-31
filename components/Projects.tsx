@@ -293,25 +293,6 @@ const Projects = () => {
           ))}
         </div>
 
-        {/* Project Stats */}
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-4 gap-6">
-          <div className="text-center">
-            <div className="text-3xl font-bold text-black mb-2">6+</div>
-            <div className="text-gray-700">Major Projects</div>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl font-bold text-black mb-2">5K+</div>
-            <div className="text-gray-700">Users Served</div>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl font-bold text-black mb-2">100%</div>
-            <div className="text-gray-700">Production Ready</div>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl font-bold text-black mb-2">GenAI</div>
-            <div className="text-gray-700">Latest Focus</div>
-          </div>
-        </div>
       </div>
     </section>
   )

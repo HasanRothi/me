@@ -60,7 +60,7 @@ const Education = () => {
                     {edu.school}
                   </h4>
 
-                  <div className="text-green-600 font-medium mb-4">
+                  <div className="text-black font-medium mb-4">
                     {edu.grade}
                   </div>
 

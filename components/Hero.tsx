@@ -8,10 +8,10 @@ const Hero = () => {
   const [isTyping, setIsTyping] = useState(true)
 
   const titles = useMemo(() => [
-    'Backend Engineer',
-    'GenAI Expert',
     'Software Engineer @ 10MS',
-    'Go | Node | Python Developer'
+    'Backend Engineer',
+    'GenAI',
+    'Go | Node | Python'
   ], [])
 
   useEffect(() => {
@@ -41,7 +41,7 @@ const Hero = () => {
   }, [text, isTyping, currentIndex, titles])
 
   return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
+    <section className="min-h-[80vh] sm:min-h-screen flex items-center justify-center relative overflow-hidden">
       <div className="absolute inset-0 bg-white" />
 
 
