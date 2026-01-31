@@ -5,7 +5,7 @@ import Education from '@/components/Education'
 import Skills from '@/components/Skills'
 import Projects from '@/components/Projects'
 import Certificates from '@/components/Certificates'
-import ProgrammingContext from '@/components/ProgrammingContext'
+import CompetitiveProgramming from '@/components/CompetitiveProgramming'
 import Volunteering from '@/components/Volunteering'
 import Hobby from '@/components/Hobby'
 import Contact from '@/components/Contact'
@@ -20,7 +20,7 @@ export default function Home() {
       <Skills />
       <Projects />
       <Certificates />
-      <ProgrammingContext />
+      <CompetitiveProgramming />
       <Volunteering />
       <Hobby />
       <Contact />

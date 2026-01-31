@@ -1,0 +1,164 @@
+\documentclass[a4paper,8pt]{article}
+
+\usepackage{parskip}
+\usepackage{hologo}
+%\usepackage{fontspec}
+
+%other packages for formatting
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.9, top=.4in, bottom=.4in]{geometry}
+
+%tabularx environment
+\usepackage{tabularx}
+
+%for lists within experience section
+\usepackage{enumitem}
+
+% centered version of 'X' col. type
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+
+%to prevent spillover of tabular into next pages
+\usepackage{supertabular}
+\usepackage{tabularx}
+\newlength{\fullcollw}
+\setlength{\fullcollw}{0.42\textwidth}
+
+%custom \section
+\usepackage{titlesec}
+\usepackage{multicol}
+\usepackage{multirow}
+
+%CV Sections inspired by:
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{1pt}{2pt}{2pt}
+
+%for publications
+\usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
+
+%Setup hyperref package, and colours for links
+\usepackage[unicode, draft=false]{hyperref}
+\color[HTML]{110223}%{1C033C}
+\addbibresource{citations.bib}
+\setlength\bibitemsep{1em}
+
+%for social icons
+\usepackage{fontawesome5}
+% \usepackage{times}
+
+% For underline
+\usepackage[normalem]{ulem}
+
+%\setmainfont{Arial}  % Set it to whatever you like
+
+\begin{document}
+
+% non-numbered pages
+\pagestyle{empty}
+
+
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\color[HTML]{1C033C} \Huge{Md Riad Hasan Sarker} \\[6pt]
+\\
+\textcolor[HTML]{371e77}{{{{\faEnvelope} hasantechnologist@gmail.com}} $|$}
+\textcolor[HTML]{371e77}{{{\faMobile} +8801626919489}}
+
+\textcolor[HTML]{371e77}{\underline{{\raisebox{-0.05\height}{\faGithub} github.com/HasanRothi}} $|$}
+\textcolor[HTML]{371e77}{\underline{{\raisebox{-0.05\height}{\faLinkedin} linkedin.com/in/md-riad-hasan-sarker}} $|$}
+\textcolor[HTML]{371e77}{\underline{{\raisebox{-0.05\height}{\faGlobe} hasanrothi.github.io/me}}}
+\end{tabularx}
+
+\section{Skills}
+\color[HTML]{1C033C}\textbf{Languages:} Go, Node.js, Python\\[3pt]
+\color[HTML]{1C033C}\textbf{Technologies \& Tools:} AWS, Docker, Kubernetes, PostgreSQL, MongoDB, Redis, GraphQL, RabbitMQ, Firebase, LangGraph, OpenAI APIs, PGVector, OpenTelemetry, Kafka, Socket.IO, Apache Airflow, FastAPI, NestJS, Express.js\\[3pt]
+
+%Experience
+\section{Work Experience}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{{10 Minute School, Dhaka}} \hfill \color[HTML]{371e77} Jan 2023 - Present \\[4pt]
+\color[HTML]{371e77}\textbf{\textit{Software Engineer - Specialist (L3)}}\ \hfill \color[HTML]{4B28A4} \\[5pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        \item Owned end-to-end architecture of TenTen AI, an LLM-powered GenAI product serving 5K+ active learners
+        \item Architected and led development of ClassRoomOS from scratch, powering offline education centers
+        \item Built scalable ETL pipelines for large-scale user and learning data analytics
+        \item Implemented distributed observability across microservices using OpenTelemetry
+        \item Designed and implemented comprehensive Course ERP system for streamlined operations
+        \item Introduced efficient course search using Typesense as ElasticSearch alternative
+        \item Integrated Firebase Cloud Messaging for real-time in-app notifications
+        \item Go, Python, Node.js, PostgreSQL, MongoDB, Redis, Docker, Kubernetes, RabbitMQ, AWS, PGVector, LangGraph, OpenTelemetry, Opik, Typesense, Firebase
+    \end{itemize}
+\end{minipage}
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\color[HTML]{1C033C} \textbf{Walton Group, Dhaka} \hfill \color[HTML]{371e77} Oct 2022 - Jan 2023 \\[4pt]
+\color[HTML]{371e77}\textbf{\textit{Senior Software Engineer}} \hfill \color[HTML]{4B28A4} \\[5pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        \item Contributed to microservice within Walton Plaza ecosystem focusing on Inventory Management
+        \item Developed real-time order update functionalities using GraphQL and Kafka
+        \item Built scalable backend services with Node.js, MongoDB, and GraphQL
+        \item Ensured seamless communication across distributed services
+        \item Node.js, MongoDB, GraphQL, Kafka
+    \end{itemize}
+    \end{minipage}
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\color[HTML]{1C033C} \textbf{Sayburgh Solutions, Dhaka} \hfill \color[HTML]{371e77} Nov 2020 - Sep 2022 \\[4pt]
+\color[HTML]{371e77}\textbf{\textit{Senior Software Engineer - Full Stack}} \hfill \color[HTML]{4B28A4} \\[5pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        \item Developed SomoyNews.TV platform with optimized database performance
+        \item Enhanced search functionality for better user discovery
+        \item Built real-time breaking news system using GraphQL Subscriptions over Redis
+        \item Developed SomoyTV, Somoy School (EdTech) \& Somoy VOD Platform
+        \item Implemented resumable video uploads and AWS S3 image uploads
+        \item Node.js, Express.js, NestJS, Vue.js, Nuxt.js, MongoDB, GraphQL, REST API, AWS, Redis, Socket.IO
+    \end{itemize}
+    \end{minipage}
+\end{tabularx}\\[3pt]
+
+% Education
+\section{Education}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\color[HTML]{1C033C} \textbf{United International University} & \hfill \color[HTML]{371e77} Jan 2024 - Jul 2025 \\
+\color[HTML]{371e77} Master of Engineering - Computer Science (Major in Data Science) & \hfill \color[HTML]{4B28A4} \textit{\textbf{CGPA: 3.14/4.0}} \\
+\multicolumn{2}{@{}X@{}}{Focused on GenAI \& Deep Learning projects. Specialized in Big Data and Machine Learning}
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\color[HTML]{1C033C} \textbf{University of Information Technology and Sciences} & \hfill \color[HTML]{371e77} May 2016 - May 2020 \\
+\color[HTML]{371e77} BSC in Information Technology (IT) & \hfill \color[HTML]{4B28A4} \textit{\textbf{CGPA: 3.61/4.0}} \\
+\multicolumn{2}{@{}X@{}}{Focused on competitive programming and software development fundamentals}
+\end{tabularx}\\[3pt]
+
+% Projects
+\section{Project Work}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        \item \textbf{TenTen AI (2025):} End-to-end LLM-powered GenAI product serving 5K+ active learners. Built from scratch and scaled to handle high-volume AI interactions in production. Technologies: Go, Python, LangGraph, PGVector, PostgreSQL, OpenTelemetry, Opik.
+        \item \textbf{ClassRoomOS (2025):} Backend platform designed to power large-scale offline education centers. Architected and led development from ground up with microservices architecture. Technologies: Go, PostgreSQL, Redis, Docker, Kubernetes, RabbitMQ.
+        \item \textbf{Click Tube Native App (2021):} Native mobile application built with React Native, featuring modern UI/UX and cross-platform compatibility. Technologies: React Native, JavaScript, Mobile Development.
+        \item \textbf{E-Shop Backend (2021):} Complete e-commerce backend API built with NestJS and MongoDB, featuring modern architecture and scalable design patterns. Technologies: NestJS, MongoDB, TypeScript, REST API, Authentication.
+        \item \textbf{SomoyNews.TV Platform (2020-2021):} Complete news platform with multilingual support, real-time breaking news, and advanced caching system serving thousands of daily readers. Technologies: Node.js, Vue.js, MongoDB, GraphQL, Redis, Socket.IO.
+    \end{itemize}
+    \end{minipage}
+\end{tabularx}\\[3pt]
+
+% Competitive Programming
+\section{Competitive Programming}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        \item \textbf{Problem Solving:} BeeCrowd (216), Vjudge (95), Codeforces (85), LeetCode (57), HackerRank (1361 Hackos), LightOJ (17), UVA (5)
+        \item \textbf{Contest Achievements:} Runner Up in UITS Zero one fest4 (2019), Runner Up in Inter university programming contest (2019)
+        \item \textbf{Regional Participation:} 37th place in Ahmed Zobayer Inter university contest (2018), 87th place in BSCCL inter university contest (2018)
+    \end{itemize}
+\end{minipage}
+\end{tabularx}
+\end{document}

@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import Link from 'next/link'
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -31,80 +32,30 @@ const Contact = () => {
     }, 2000)
   }
 
-  const contactInfo = [
-    {
-      icon: '📧',
-      title: 'Email',
-      value: 'hasantechnologist@gmail.com',
-      link: 'mailto:hasantechnologist@gmail.com'
-    },
-    {
-      icon: '💼',
-      title: 'LinkedIn',
-      value: 'md-riad-hasan-sarker',
-      link: 'https://linkedin.com/in/md-riad-hasan-sarker'
-    },
-    {
-      icon: '🐙',
-      title: 'GitHub',
-      value: 'github.com/HasanRothi',
-      link: 'https://github.com/HasanRothi'
-    },
-    {
-      icon: '🌍',
-      title: 'Location',
-      value: 'Dhaka, Bangladesh',
-      link: '#'
-    }
-  ]
-
   return (
     <section id="contact" className="section-container bg-gray-50">
       <h2 className="section-title">Get In Touch</h2>
 
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed mb-8">
             I&apos;m always interested in discussing new opportunities, exciting projects,
             or just having a conversation about technology. Feel free to reach out!
           </p>
-        </div>
 
-        <div className="max-w-3xl mx-auto">
-          {/* Contact Information */}
-          <div className="card p-8">
-            <h3 className="text-2xl font-bold text-black mb-6">
-              Contact Information
-            </h3>
-
-            <div className="space-y-6">
-              {contactInfo.map((info, index) => (
-                <a
-                  key={index}
-                  href={info.link}
-                  target={info.link.startsWith('http') ? '_blank' : undefined}
-                  rel={info.link.startsWith('http') ? 'noopener noreferrer' : undefined}
-                  className="flex items-center p-4 rounded-lg hover:bg-gray-100 transition-all duration-300 group"
-                >
-                  <span className="text-3xl mr-4">{info.icon}</span>
-                  <div>
-                    <h4 className="font-semibold text-black group-hover:text-black">
-                      {info.title}
-                    </h4>
-                    <p className="text-gray-700">
-                      {info.value}
-                    </p>
-                  </div>
-                  {info.link.startsWith('http') && (
-                    <svg className="w-4 h-4 ml-auto text-gray-400 group-hover:text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                    </svg>
-                  )}
-                </a>
-              ))}
-            </div>
+          <div className="flex justify-center">
+            <Link
+              href="/cv"
+              className="inline-flex items-center px-6 py-3 bg-black text-white rounded-lg hover:bg-gray-800 transition-colors duration-300 text-sm font-medium"
+            >
+              <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+              </svg>
+              View CV
+            </Link>
           </div>
         </div>
+
       </div>
     </section>
   )

@@ -1,6 +1,6 @@
 'use client'
 
-const ProgrammingContext = () => {
+const CompetitiveProgramming = () => {
   const contests = [
     {
       year: '2019',
@@ -43,7 +43,7 @@ const ProgrammingContext = () => {
   ]
 
   return (
-    <section id="programming-context" className="section-container">
+    <section id="competitive-programming" className="section-container">
       <h2 className="section-title">Competitive Programming</h2>
 
       <div className="max-w-6xl mx-auto">
@@ -93,4 +93,4 @@ const ProgrammingContext = () => {
   )
 }
 
-export default ProgrammingContext
+export default CompetitiveProgramming
